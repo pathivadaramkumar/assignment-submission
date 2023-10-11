@@ -1,0 +1,23 @@
+Docker file:
+step 1: install Docker
+#to connect to the server i used mobaxtream
+step 2:creating a Docker file
+
+# Use an official WordPress image as the base image
+FROM wordpress:latest
+
+# Add any necessary labels
+LABEL maintainer="Ramkumar <pathivadark68@gmail.com>"
+
+ EXPOSE 80  (#exposing the application on port this port)
+
+ # Define the command to start the WordPress application
+CMD ["apache2-foreground"]
+
+#to build this file as a image we use command 
+Docker build 
+
+#to run image as container we use command like
+Docker run
+---------------------
+
